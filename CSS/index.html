@@ -12,12 +12,39 @@
         
             body{
                 margin:0;
+                font-family: sans-serif;
             }
+            
             #topBar{
                 margin: 0 auto;
                 width: 1000px;
                 height: 42px;
+            }
+            
+            #news{
+               
+                height:100%;
+                width:1000px;
+                margin: 0 auto;
+                padding-top: 4.5px;
+            }
+            
+            #newsLogo{
+                color: white;
+                font-size: 250%;
+                font-family: sans-serif;
+                padding:0;
                 
+            }
+            
+            #local{
+                font-size: 130%;
+                padding:4px 20px 4px 10px;
+                font-family: sans-serif;
+                float: right;
+                color:white;
+                border: 1px grey solid;
+                margin-top: 6px;
             }
             
             #midBar{
@@ -32,13 +59,23 @@
                 height: 35px;
             }
             
+            #menu{
+                
+                width: 1000px;
+                height: 15px;
+                margin: auto;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            
             #BBClogo{
-                padding:8px;
+                padding:8px 16px 8px 0px;
                 float:left;
             }
             
             #signIn{
-                width:170px;
+                width:160px;
             }
             
             #bell{
@@ -47,12 +84,113 @@
             
             #search{
                 margin: 10px;
-                width:170px;
+                width:200px;
+                height: 20px;
+                border:0;
+                font-weight: bold;
+                color: black;
+                font-size: 80%;
+                background-color: #CCCCCC;
             }
             
             #auto{
-                width:236px;
+                float: right;
                 text-align: right;
+            }
+            
+            #home{
+                padding-left: 0;
+                border-left: 0;
+            }
+            
+            #gap{
+                width:1000px;
+                margin: 0 auto;
+                padding: 10px 0px;
+                margin-bottom: 10px;
+            }
+            
+            #techHeader{
+                font-size: 130%;
+                width: 105px;
+                border-bottom: solid firebrick 3px;
+            }
+            
+            #content{
+                width:1000px;
+                margin: 0 auto;
+            }
+            
+            #asda-link{
+                font-size: 90%;
+                line-height: 150%;
+            }
+            
+            #asda h2{
+                font-size: 190%;
+                color: dimgrey;
+            }
+            
+            #asda-p{
+                width: 35%;
+                font-size: 90%;
+                margin: 0;
+                padding: 0;
+                float: left;
+                line-height: 130%;
+            }
+            
+            #asdaImg{
+                float: right;
+                width: 60%;
+                padding-left: 15px;
+                margin-right: 15px;
+            }
+            
+            #timeStamp{
+                font-size: 80%;
+                margin: 25px;
+                position: relative;
+                top: 10px;
+            }
+            
+            #watch{
+                width:calc(30% - 15px);
+                height:1000px;
+                float: right;
+                padding-left: 15px;
+            }
+            
+            #watch h2{
+                font-weight: 400;
+            }
+            
+            #watch img{
+                height:260px;
+                float:left;
+                margin-right: 10px;
+            }
+            
+            #watch h4{
+                margin:0;
+                padding:0;
+            }
+            
+            #watch p{
+                font-size: 80%;
+                position: relative;
+                left: 20px;
+                margin:0;
+                padding: 0;
+                padding-top: 13px;
+                padding-bottom: 10px;
+            }
+            
+            #last{
+                float: right;
+                width:157px;
+                position: relative;
+                top: 15px;
             }
             
             .topItem{
@@ -69,6 +207,35 @@
                 font-weight: bold;
             }
             
+            .clear{
+                clear:both;
+            }
+            
+            .menuItem{
+                float:left;
+                height:100%;
+                
+                border-left: 1px white solid;
+            }
+            
+            .menuWord{
+                color: white;
+                font-size: 90%;
+                font-family: sans-serif;
+                margin:0;
+                padding:0 12px;
+            }
+            
+            .story{
+                width:70%;
+                height: 330px;
+                border-bottom: 1px solid #CCCCCC;
+                float: left;
+            }
+            
+            .marg{
+                margin-bottom: 12px !important; 
+            }
             
         </style>
         
@@ -87,7 +254,7 @@
             <div class="topItem" id="bell">
             
             </div>
-            <div class="topItem" id="news">
+            <div class="topItem" >
                 <p class="topWord">News</p>
             </div>
             <div class="topItem">
@@ -109,15 +276,99 @@
                 <p class="topWord">More</p>
             </div>
             <div class="topItem" id="auto">
-                <input type="text" id="search" placeholder="Search...">
+                <input type="text" id="search" placeholder="Search">
             </div>
         </div>
+        <div class="clear"></div>
         <div id="midBar">
-        
+            <div id="news">
+                <span id=newsLogo>NEWS</span>
+                <div id="local">
+                    Find local news
+                </div>
+            </div>
         </div>
         <div id="menuBar">
-        
+            <div id="menu">
+                <div class="menuItem" id="home">
+                    <p class="menuWord" id="home">Home</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">UK</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">World</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">Buiness</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">Politics</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">Tech</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">Science</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">Health</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">Education</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">Entertainment &amp; Arts</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">Video &amp; Audio</p>
+                </div>
+                <div class="menuItem">
+                    <p class="menuWord">More</p>
+                </div>
+                
+            </div>
         </div>
+        <div id="gap">
+            <div id="techHeader">Technology</div>
+        </div>
+        <div id="content">
+            <div class="story" id="asda">
+                <h2>ASDA bug exposed payment details</h2>
+                <p id="asda-p">
+                    Security vulnerabilities that put customers at risk have affected ASDA's
+                    website for a couple of years, a security expert has revealed.
+                </p>
+                
+                
+                <img id="asdaImg" src="http://ichef-1.bbci.co.uk/news/320/cpsprodpb/F134/production/_87784716_asda.gif">
+                
+                <p id="timeStamp">2 hours ago | <span style="color:firebrick;">Technology</span></p>
+                <hr align="left" style="border:firebrick 1px solid;width:40px;">
+                <p id="asda-link">Surveilance firm hit in hack attack
+                <br>eBay flaw has existed for months
+                </p>
+            </div>
+            
+            <div id="watch">
+                <h2> Watch/Listen</h2>
+                <img src="articles.png">
+                <h4>UK science chief backs blockchains</h4>
+                <p class="marg">1 hour ago</p>
+                
+                <h4>Drone register give 'accountability'</h4>
+                <p>18 January 2016 |</p>
+                <span style="color:firebrick;font-size:80%;">Technology</span>
+                <div id="last">
+                <h4>SpaceX rocket explodes during landing</h4>
+                <p>18 January 2016 |</p>
+                <span style="color:firebrick;font-size:80%;" class="marg">Science &amp; Environment </span>
+                    </div>
+            </div>
+        </div>
+        
+        
+        
         
         
     </body>
